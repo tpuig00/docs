@@ -1,0 +1,88 @@
+---
+title: 'WordPress Plugin'
+description: 'Instala y configura el Virtual Try-on de Preview AI en tu tienda WooCommerce.'
+---
+
+<img
+  className="block dark:hidden"
+  src="/images/hero-light.png"
+  alt="Hero Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/hero-dark.png"
+  alt="Hero Dark"
+/>
+
+## Introducción
+
+El plugin de **Preview AI** para WordPress permite a tus clientes visualizar cómo les quedan tus productos en tiempo real. Utilizando tecnología de **Virtual Try-on**, aumentas la confianza del comprador y reduces las devoluciones.
+
+<Info>
+  **Requisitos previos**:
+  - WordPress 6.0 o superior.
+  - WooCommerce instalado y activo.
+  - Una cuenta activa en [Preview AI](https://previewai.app).
+</Info>
+
+## Instalación
+
+Sigue estos pasos para añadir Preview AI a tu tienda:
+
+<Steps>
+  <Step title="Descarga el plugin">
+    Obtén el archivo `.zip` del plugin desde tu panel de control de Preview AI o el repositorio oficial.
+  </Step>
+  <Step title="Sube a WordPress">
+    En tu panel de WordPress, ve a **Plugins > Añadir nuevo > Subir plugin**. Selecciona el archivo descargado e instálalo.
+  </Step>
+  <Step title="Activa el plugin">
+    Una vez instalado, haz clic en **Activar**. Verás una nueva sección llamada **Preview AI** en el menú lateral.
+  </Step>
+</Steps>
+
+## Configuración Básica
+
+Para conectar tu tienda con nuestra IA, necesitas configurar tu API Key.
+
+### Conexión de la API
+
+1. Ve a **Preview AI > Ajustes**.
+2. Introduce tu `API Key` (la puedes encontrar en tu [dashboard de Preview AI](https://dashboard.previewai.app)).
+3. Haz clic en **Guardar cambios**. El sistema verificará la conexión automáticamente.
+
+<Tip>
+  Si la conexión falla, asegúrate de que tu servidor permite peticiones salientes a `api.previewai.app`.
+</Tip>
+
+## Gestión de Productos
+
+No todos los productos necesitan un probador virtual. Puedes gestionarlos individualmente.
+
+<AccordionGroup>
+  <Accordion title="Habilitar Try-on en un producto" icon="shirt">
+    Dentro de la edición de un producto en WooCommerce, busca la pestaña **Preview AI** en el panel de "Datos del producto". Marca la casilla **Habilitar Virtual Try-on**.
+  </Accordion>
+  <Accordion title="Sincronización del catálogo" icon="rotate">
+    Para que la IA "aprenda" sobre tus prendas, ve a **Preview AI > Catálogo** y haz clic en **Sincronizar Catálogo**. Esto procesará las imágenes de tus productos para optimizar los resultados del probador.
+  </Accordion>
+</AccordionGroup>
+
+## Personalización del Widget
+
+El botón de "Probar Virtualmente" aparecerá automáticamente en la página de producto, pero puedes ajustarlo:
+
+- **Estilo**: Cambia los colores y bordes para que coincidan con tu marca desde **Preview AI > Apariencia**.
+- **Posición**: Por defecto aparece tras el botón de añadir al carrito. Puedes usar el shortcode `[preview_ai_button]` si usas constructores como Elementor o Divi.
+
+## Análisis y Conversión
+
+El plugin incluye un sistema de rastreo automático:
+
+- **Atribución**: Sabemos cuándo un usuario compra después de usar el probador.
+- **Métricas**: Visualiza cuántos "Try-ons" se generan al día desde tu panel de WordPress.
+
+<Card title="¿Necesitas ayuda avanzada?" icon="life-ring" href="https://previewai.app/support">
+  Consulta nuestra base de conocimientos técnica o contacta con nuestro equipo de soporte para integraciones a medida.
+</Card>
+
